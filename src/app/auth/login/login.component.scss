@@ -1,0 +1,17 @@
+.card {
+  max-width: 400px;
+  margin: auto auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > * {
+  width: 100%;
+}
+
+.pointer-icon {
+  cursor: pointer;
+}

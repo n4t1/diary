@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+
+  <!-- <button (click)="openSidenav()" mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button> -->
+
+  <span>Movie & Series List</span>
+
+  <span class="fill-remaining-space"></span>
+
+  <span class="font display" *ngIf="islogin">Hello {{showUserName()}} !</span>
+
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item (click)="openDialog()">Dodaj</button>
+    <mat-divider></mat-divider>
+    <button mat-menu-item (click)="logout()">LogOut</button>
+  </mat-menu>
+
+  <button *ngIf="islogin" mat-icon-button [matMenuTriggerFor]="appMenu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+</mat-toolbar>
+
+<!-- <app-sidenav [isOpen]="isOpen"></app-sidenav> -->

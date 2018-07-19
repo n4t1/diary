@@ -1,0 +1,17 @@
+.card {
+  max-width: 60%;
+  margin: auto auto;
+}
+
+// :host /deep/mat-tab-header {
+//   align-self: center;
+// }
+
+@media(max-width: 700px) {
+  .card {
+    max-width: 100%;
+    margin: auto auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
