@@ -38,6 +38,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
-#angular files
-/e2e
+#my files
 package-lock.json
